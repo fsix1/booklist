@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Fsix</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add book to list</h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label for="id">Book id</label>
+                <input type="number" id="book-id" class="form-control" placeholder="Book id (must be numbers only)">
+            </div>
+            <div class="form-group">
+                <label for="tile">Book title</label>
+                <input type="text" id="title" class="form-control" placeholder="book title">
+            </div>
+            <div class="form-group">
+                <label for="author">Book author</label>
+                <input type="text" id="author" class="form-control" placeholder="book author">
+            </div>
+                <input type="submit" vlaue="add book" class="btn btn-success">
+        </form>
+        <h1>Book List</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Book id</th>
+                    <th>Book title</th>
+                    <th>Book author</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tb"></tbody>
+        </table>
+        <button id="clear" class="btn btn-danger btn-sm">clear books</button>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
